@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     name = request.args.get("name")
     if name == None:
-        name = "world!"
+        name = "flask!"
     return "Hello "+name+"!"
 	
 if __name__ == '__main__':
